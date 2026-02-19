@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes X - The Ultimate Learning App</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #333;
+            --bg-color: #f8fafc;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        /* Top Alert Banner for Play Store Reviewers */
+        .alert-banner {
+            background-color: #fee2e2;
+            color: #991b1b;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 0.95rem;
+            border-bottom: 2px solid #ef4444;
+            font-weight: 500;
+        }
+        .alert-banner strong {
+            color: #7f1d1d;
+        }
+        /* Header */
+        header {
+            background-color: white;
+            padding: 20px 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #475569;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+        /* Features Section */
+        .features {
+            padding: 60px 5%;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #1e3a8a;
+        }
+        .feature-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        /* About & Ownership Section */
+        .about {
+            background-color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+        }
+        .team-box {
+            background: #f1f5f9;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .team-box p {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="alert-banner">
+        <strong>⚠️ Technical Notice:</strong> This application requires an active internet connection to function. Core features of the app, including the <strong>Login Screen and various internal dashboards</strong>, operate by securely loading designated webpages within the app environment. 
+    </div>
+
+    <header>
+        <div class="logo">Classes X</div>
+        <a href="#about" style="text-decoration: none; color: #333; font-weight: 600;">About Us</a>
+    </header>
+
+    <section class="hero">
+        <h1>Transform Your Learning Journey</h1>
+        <p>A comprehensive educational platform for students, offering live classes, recorded lectures, and detailed progress tracking for parents.</p>
+        <a href="#" class="btn">Get it on Google Play</a>
+    </section>
+
+    <section class="features">
+        <h2>App Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>👨‍🎓 Student Dashboard</h3>
+                <p>Seamlessly browse courses, watch high-quality video lectures with custom playback controls, and download PDF notes for offline studying.</p>
+            </div>
+            <div class="feature-card">
+                <h3>👨‍👩‍👦 Parent Portal</h3>
+                <p>A dedicated, view-only login system for parents to track their child's attendance, test scores, and overall academic progress.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛡️ Secure Login System</h3>
+                <p>Our secure authentication system utilizes web-based login portals ensuring safe and encrypted access for all user roles.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Real-time Updates</h3>
+                <p>Get instant notifications and notices right on your dashboard. (Requires internet access to sync data dynamically).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Who We Are</h2>
+        <p>Classes X is proudly developed and managed by <strong>Gothwad Technologies</strong>, dedicated to revolutionizing digital education.</p>
+        
+        <div class="team-box">
+            <h3 style="color: #2563eb; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 20px;">Leadership & Ownership</h3>
+            <p><strong>Owner:</strong> Suman Bai Meena</p>
+            <p><strong>Founder & Operator:</strong> Pawan Kumar Meena</p>
+            <p><strong>CEO:</strong> Chirag Jha</p>
+            <p style="margin-top: 20px; font-size: 0.95rem; color: #64748b;">
+                Website: <a href="https://gothwadtechnologies.com" style="color: #2563eb;">gothwadtechnologies.com</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gothwad Technologies. All Rights Reserved.</p>
+        <div style="margin-top: 15px;">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms & Conditions</a> | 
+            <a href="mailto:support@gothwadtechnologies.com">Contact Us</a>
+        </div>
+    </footer>
+
+</body>
+</html>
